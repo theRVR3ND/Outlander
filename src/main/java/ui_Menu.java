@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Menu
+ * Outlander - Multiplayer Space Game | ui_Menu
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -133,7 +133,7 @@ public abstract class ui_Menu extends JPanel implements MouseListener, MouseMoti
       g2.setFont(defaultFont);
       
       //Write program info (so I don't waste another hour changing the wrong project)
-      g2.drawString("Kilo Engine | By: Kelvin Peng, '18", 10, getHeight() - 10);
+      g2.drawString("Outlander | By: Kelvin Peng, '18", 10, getHeight() - 10);
    }
    
    /**

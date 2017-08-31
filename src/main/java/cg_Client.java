@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | cg_Client
+ * Outlander - Multiplayer Space Game | cg_Client
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -35,7 +35,7 @@ public class cg_Client{
       ui_Menu.preload();
       
       //Initialize and launch frame
-      frame = new JFrame("Kilo Engine | Client");
+      frame = new JFrame("Outlander");
       
       frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
       //frame.setUndecorated(true);

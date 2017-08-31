@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | cg_World
+ * Outlander - Multiplayer Space Game | cg_World
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -9,6 +9,8 @@
 
 import java.awt.*;
 import java.util.*;
+import java.awt.image.*;
+import java.awt.geom.*;
 
 public class cg_World extends bg_World{
    
@@ -16,6 +18,11 @@ public class cg_World extends bg_World{
     * Most recent gamestate received from server.
     */
    private HashMap<Short, byte[]> gamestate;
+   
+   private final BufferedImage[] imageCache = new BufferedImage[]{
+      util_Utilities.loadImage("panel/ball.png"),
+      util_Utilities.loadImage("panel/panel.png")
+   };
    
    /**
     * Constructor.
@@ -28,15 +35,25 @@ public class cg_World extends bg_World{
    }
    
    /**
+    * Update visual components of world
+    */
+   public void think(){
+      super.think();
+      
+      //Add particles
+   }
+   
+   /**
     * Render world contents.
     * 
     * @param g2               Graphics object to render into.
     */
    public void render(Graphics2D g2){
       //Graphics defaults
-      g2.setColor(Color.GRAY);
+      g2.setColor(Color.BLACK);
       g2.fillRect(0, 0, cg_Client.SCREEN_WIDTH, cg_Client.SCREEN_HEIGHT);
       g2.setClip(0, 0, cg_Client.SCREEN_WIDTH, cg_Client.SCREEN_HEIGHT);
+      final AffineTransform orig = g2.getTransform();
       
       //Figure out who we are
       bg_Player us = getPlayer(cg_Panel.connection.getClientID());
@@ -54,30 +71,55 @@ public class cg_World extends bg_World{
          
          //Check if in view area
          if(Math.abs(relX) < VIEW_WIDTH && Math.abs(relY) < VIEW_HEIGHT){
-            //Draw based on entity type
-            if(ent instanceof bg_Player){
-               bg_Player player = (bg_Player)ent;
-               g2.setColor(player.getColor());
-               
-               //Draw player
-               g2.fillRect(
-                  relX * 2 + cg_Client.SCREEN_WIDTH / 2 - 5,
-                 -relY * 2 + cg_Client.SCREEN_HEIGHT / 2 - 5,
-                  10,
-                  10
-               );
-               
-               //Draw player name
-               FontMetrics fontMetrics = g2.getFontMetrics();
-               final short nameWidth = (short)fontMetrics.stringWidth(player.getName());
-               g2.drawString(
-                  player.getName(),
-                  relX * 2 + cg_Client.SCREEN_WIDTH / 2 - nameWidth / 2,
-                 -relY * 2 + cg_Client.SCREEN_HEIGHT / 2 - 10
-               );
-            }
+            ent.render(g2, relX, relY);
          }
       }
+      
+      //Draw navball
+      AffineTransform rotate = new AffineTransform();
+      rotate.setToRotation(
+         Math.toRadians(-us.getPosition().getRot()),
+         cg_Client.SCREEN_WIDTH / 2,
+         cg_Client.SCREEN_HEIGHT - 100
+      );
+      
+      g2.setTransform(rotate);
+      
+      g2.drawImage(
+         imageCache[0],
+         cg_Client.SCREEN_WIDTH / 2 - imageCache[0].getWidth() / 2,
+         cg_Client.SCREEN_HEIGHT - 175,
+         null
+      );
+      
+      g2.setTransform(orig);
+      
+      //Draw center console panel
+      g2.drawImage(
+         imageCache[1],
+         cg_Client.SCREEN_WIDTH / 2 - imageCache[1].getWidth() / 2,
+         cg_Client.SCREEN_HEIGHT - imageCache[1].getHeight(),
+         null
+      );
+      
+      //Draw fuel level
+      g2.setColor(Color.GREEN);
+      short barHeight = (short)(140 * (1.0 * us.getFuel() / Short.MAX_VALUE));
+      g2.fillRect(
+         cg_Client.SCREEN_WIDTH / 2 - 168,
+         cg_Client.SCREEN_HEIGHT - 6 - barHeight,
+         28,
+         barHeight
+      );
+      
+      //Draw throttle level
+      barHeight = (short)(140 * (1.0 * us.getThrottle() / Byte.MAX_VALUE));
+      g2.fillRect(
+         cg_Client.SCREEN_WIDTH / 2 + 138,
+         cg_Client.SCREEN_HEIGHT - 6 - barHeight,
+         28,
+         barHeight
+      );
    }
    
    /**
@@ -95,7 +137,7 @@ public class cg_World extends bg_World{
          byte entType = delta[2];
          
          if(entType == PLAYER)
-            spawn = new bg_Player();
+            spawn = new cg_Player();
          
          entities.put(ID, spawn);
       }
@@ -111,6 +153,7 @@ public class cg_World extends bg_World{
       //Find last official info on entity
       byte[] data;
       LinkedList<Object> entObj = entities.get(ID).getData(new LinkedList<Object>());
+      
       if(gamestate.containsKey(ID))
          data = gamestate.get(ID);
       else

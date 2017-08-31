@@ -1,5 +1,5 @@
 /**
- * Kilo - 2D Java Multiplayer Engine | g_Echo
+ * Outlander - Multiplayer Space Game | g_Echo
  * W.T.Woodson H.S.
  * 2017
  *

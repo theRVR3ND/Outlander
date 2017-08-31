@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | g_Connection
+ * Outlander - Multiplayer Space Game | g_Connection
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -12,7 +12,7 @@ import java.io.*;
 import java.util.*;
 import java.awt.*;
 
-public class g_Connection extends Thread implements bg_Constants{
+public class g_Connection extends Thread implements bg_Constants, bg_Parts{
    
    /**
     * Connection with client.
@@ -102,7 +102,7 @@ public class g_Connection extends Thread implements bg_Constants{
             
             //Send disconnect message to others
             for(g_Connection other : g_Server.server.getClients()){
-               if(this == other){
+               if(this != other){
                   other.relayMessage(
                      g_Server.server.getWorld().getPlayer(clientID).getName() + " has disconnected."
                   );
@@ -188,7 +188,7 @@ public class g_Connection extends Thread implements bg_Constants{
          
          //Relay message to all other clients
          case(MESSAGE):
-            
+         
             String message =
                "[" + g_Server.server.getWorld().getPlayer(clientID).getName() + "]: " +
                (new String(info, 1, info.length - 1)).trim();
@@ -196,6 +196,42 @@ public class g_Connection extends Thread implements bg_Constants{
             //Send message to all clients
             for(byte i = 0; i < g_Server.server.getClients().size(); i++)
                g_Server.server.getClients().get(i).relayMessage(message);
+            
+            break;
+         
+         //Verify that craft is valid, and send to all clients
+         case(CRAFT):
+            
+            //First figure out total inventory
+            bg_Player player = g_Server.server.getWorld().getPlayer(clientID);
+            byte[] totalInv = Arrays.copyOf(player.getInventory(), NUM_PARTS);
+            byte[][] currCraft = player.getLayout();
+            for(byte r = 0; r < currCraft.length; r++){
+               for(byte c = 0; c < currCraft[0].length; c++){
+                  totalInv[currCraft[r][c]]++;
+               }
+            }
+            
+            //Check if enough parts for new craft
+            for(byte i = 3; i < numByte; i++){
+               totalInv[info[i]]--;
+               
+               //Run out of parts
+               if(totalInv[info[i]] < 0)
+                  return;
+            }
+            
+            //Set new inventory and layout
+            player.setInventory(totalInv);
+            
+            currCraft = new byte[info[1]][info[2]];
+            byte ind = 3;
+            for(byte r = 0; r < currCraft.length; r++){
+               for(byte c = 0; c < currCraft[0].length; c++){
+                  currCraft[r][c] = info[ind++];
+               }
+            }
+            player.setLayout(currCraft);
             
             break;
       }

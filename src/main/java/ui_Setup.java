@@ -1,5 +1,5 @@
 /**
- * Kilo One - 2D Java Multiplayer Engine | ui_Setup
+ * Outlander - Multiplayer Space Game | ui_Setup
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -58,7 +58,7 @@ public class ui_Setup extends ui_Menu{
       
       }else if(buttons[3].isDown()){
          cg_Client.frame.setContentPane(ui_Menu.main);
-      
+         
       }else{
          return;
       }

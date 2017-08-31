@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | cg_Panel
+ * Outlander - Multiplayer Space Game | cg_Panel
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -67,6 +67,11 @@ public abstract class cg_Panel extends JPanel implements KeyListener,
    public static cg_GamePanel gamePanel = new cg_GamePanel();
    
    /**
+    * Panel for game spacecraft editing.
+    */
+   public static cg_EditorPanel editorPanel = new cg_EditorPanel();
+   
+   /**
     * Constructor.
     */
    public cg_Panel(){
@@ -105,12 +110,8 @@ public abstract class cg_Panel extends JPanel implements KeyListener,
          }catch(InterruptedException e){}
       }
       
-      //Improve rendering quality
-      Graphics2D g2 = util_Utilities.improveQuality(g);
-      g2.setClip(0, 0, cg_Client.SCREEN_WIDTH, cg_Client.SCREEN_HEIGHT);
-      
       //Set graphics default
-      g2.setFont(
+      g.setFont(
          new Font("Courier New", Font.BOLD, util_Utilities.getFontSize(4.0 / 5))
       );
    }
@@ -119,7 +120,7 @@ public abstract class cg_Panel extends JPanel implements KeyListener,
     * Return connection state.
     */
    public static boolean isConnected(){
-      return connection == null;
+      return connection != null;
    }
    
    /**
@@ -185,7 +186,8 @@ public abstract class cg_Panel extends JPanel implements KeyListener,
       
       //Starting chat message
       }else{
-         if(bindTable.get((short)(e.getKeyCode())) == CHAT){
+         if(bindTable.containsKey((short)(e.getKeyCode())) &&
+            bindTable.get((short)(e.getKeyCode())) == CHAT){
             chatMessage = "";
          }
       }

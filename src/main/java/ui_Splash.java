@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Splash
+ * Outlander - Multiplayer Space Game | ui_Splash
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -50,7 +50,7 @@ public class ui_Splash extends JPanel{
    public ui_Splash(){
       //Add any splash images you want in here (up to 127 images)
       splashImages = new BufferedImage[] {
-         util_Utilities.loadImage("menu/Icon.png"),
+         util_Utilities.loadImage("menu/Logo.png"),
       };
       
       splashInd = 0;

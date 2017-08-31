@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="engine.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="27.604769"
+     inkscape:cy="19.058084"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.3)">
+    <rect
+       style="opacity:1;fill:#939393;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4863-9"
+       width="0.74687505"
+       height="4.5944128"
+       x="212.07611"
+       y="197.08954"
+       transform="rotate(45)"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <path
+       style="opacity:1;fill:#494949;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06499999;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 9.7553375,297 c -6.7819638,0 0,0 -6.7819638,0 4e-7,-4.41904 1.5181946,-8.00138 3.3909819,-8.00138 1.8727873,0 3.3909815,3.58234 3.3909819,8.00138 z"
+       id="path4832"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsc"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <rect
+       style="opacity:1;fill:#939393;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4863"
+       width="0.68702567"
+       height="4.2262487"
+       x="-203.79568"
+       y="206.16643"
+       transform="rotate(-45)"
+       ry="0.34351283"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <path
+       style="opacity:1;fill:#939393;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 8.7721291,288.84829 h 2.7228099 v 2.92326 H 9.5906426 l -0.8185135,-0.86842 z"
+       id="rect4842"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <rect
+       style="opacity:1;fill:#7b7b7b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4835"
+       width="9.5214758"
+       height="1.1358954"
+       x="1.5892621"
+       y="289.28259"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <path
+       style="opacity:1;fill:#7b7b7b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 3.15e-7,284.3 H 12.7 v 4.08002 l -1.013351,0.99801 H 1.0133515 L 3.15e-7,288.38002 Z"
+       id="rect4839"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <circle
+       style="opacity:1;fill:#f34c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4837"
+       cx="4.8108511"
+       cy="289.71692"
+       r="1.5702084"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <path
+       style="fill:#939393;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 9.5906425,291.77155 v 0.64549 l 0.3782277,0.37823 v 0.56671 c -0.3809327,0.45672 1.0292078,0.72445 -6.9450608,1.08668 -0.4094727,0.26773 -0.4094757,0.53547 0,0.8032 1.6129368,0.0971 4.3866073,0.12679 6.9689362,0.18899 0.7667184,-0.25365 1.1400364,-0.68854 1.1543384,-1.19299 v -1.48912 l 0.357392,-0.32398 v -0.98629"
+       id="path4845"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4777-8"
+       sodipodi:sides="3"
+       sodipodi:cx="-9.9644082"
+       sodipodi:cy="-289.14971"
+       sodipodi:r1="0.83266205"
+       sodipodi:r2="0.41633102"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -9.2433014,-288.73339 -1.4422126,0 0.7211061,-1.24899 z"
+       inkscape:transform-center-y="0.20814813"
+       transform="scale(-1)"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png" />
+    <g
+       transform="matrix(0.54428335,0,0,1,-0.533282,260.14859)"
+       id="g4920"
+       style="stroke-width:1.35546243"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png">
+      <rect
+         y="24.913067"
+         x="2.0080583"
+         height="1.9377041"
+         width="2.1259966"
+         id="rect4749-7"
+         style="opacity:1;fill:#696969;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810505;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="25.08427"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-6"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="25.379742"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-1-6"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="25.675213"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-5-3"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="25.970684"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-1-4-5"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="26.266155"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-2-6"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="26.561626"
+         x="2.1356134"
+         height="0.11792583"
+         width="1.8708867"
+         id="rect4706-1-7-3"
+         style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08810508;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.07800519px;line-height:0.42109582px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#494949;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="8.5320644"
+       y="285.89691"
+       id="text4796-6"
+       inkscape:export-xdpi="512.00006"
+       inkscape:export-ydpi="512.00006"
+       inkscape:export-filename="C:\Users\kelvi_000\engine.png"><tspan
+         sodipodi:role="line"
+         id="tspan4794-7"
+         x="8.5320644"
+         y="285.89691"
+         style="fill:#494949;fill-opacity:1;stroke-width:0.26458332">kel-tek</tspan></text>
+  </g>
+</svg>

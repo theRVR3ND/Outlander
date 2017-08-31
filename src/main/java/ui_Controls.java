@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Controls
+ * Outlander - Multiplayer Space Game | ui_Controls
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017

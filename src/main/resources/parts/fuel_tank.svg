@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.0 r15299"
+   sodipodi:docname="fuel_tank.svg"
+   inkscape:export-filename="D:\Kelvin\Code\Outlander\src\main\resources\parts\fuel_tank.png"
+   inkscape:export-xdpi="512"
+   inkscape:export-ydpi="512">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="13.98824"
+     inkscape:cy="24.730339"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.3)">
+    <ellipse
+       style="opacity:1;fill:#f34c00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.66499996;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4496"
+       cx="6.3499999"
+       cy="290.64999"
+       rx="6.3499999"
+       ry="6.3500051" />
+    <path
+       transform="scale(-1,1)"
+       style="opacity:1;fill:#7b7b7b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06499999;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -12.7,284.29999 H 0 l 0,2.74032 h -3.175 l -0.79375,-1.15755 h -4.7625 L -9.525,287.04031 H -12.7 Z"
+       id="rect4688"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <path
+       style="opacity:1;fill:#7b7b7b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06499999;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -2e-7,297 H 12.7 v -2.74032 H 9.5250002 l -0.79375,1.15755 H 3.9687498 l -0.79375,-1.15755 H -2e-7 Z"
+       id="rect4688-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#696969;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4749"
+       width="2.1259966"
+       height="1.9377041"
+       x="0.59773445"
+       y="294.66571"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="294.83691"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706-1"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="295.13239"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706-5"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="295.42786"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706-1-4"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="295.72333"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706-2"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="296.0188"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <rect
+       style="opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.06500001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4706-1-7"
+       width="1.8708867"
+       height="0.11792583"
+       x="0.72528952"
+       y="296.31427"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.065;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4777"
+       sodipodi:sides="3"
+       sodipodi:cx="11.160092"
+       sodipodi:cy="295.88645"
+       sodipodi:r1="0.83266205"
+       sodipodi:r2="0.41633102"
+       sodipodi:arg1="0.52359878"
+       sodipodi:arg2="1.5707963"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 11.881199,296.30278 -1.442213,0 0.721106,-1.249 z"
+       inkscape:transform-center-y="-0.20815237"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.07800519px;line-height:0.42109579px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#494949;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="8.9675093"
+       y="285.47562"
+       id="text4796"
+       inkscape:export-xdpi="512"
+       inkscape:export-ydpi="512"><tspan
+         sodipodi:role="line"
+         id="tspan4794"
+         x="8.9675093"
+         y="285.47562"
+         style="stroke-width:0.26458332;fill:#494949;fill-opacity:1;">kel-tek</tspan></text>
+    <path
+       style="opacity:1;fill:#e64800;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.29291344;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.2265625 16.486328 A 24 24.000019 0 0 0 0 24 A 24 24.000019 0 0 0 1.2382812 31.513672 L 46.773438 31.513672 A 24 24.000019 0 0 0 48 24 A 24 24.000019 0 0 0 46.761719 16.486328 L 1.2265625 16.486328 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,284.3)"
+       id="rect4498" />
+  </g>
+</svg>

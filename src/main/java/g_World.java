@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | g_World
+ * Outlander - Multiplayer Space Game | g_World
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -129,12 +129,10 @@ public class g_World extends bg_World{
          
          //Add other entity info
          byte[] keyBytes = shortToBytes(key);
-         
          byte[] add = new byte[comp.length + 3];
          
          add[0] = keyBytes[0];
          add[1] = keyBytes[1];
-         
          add[2] = PLAYER;
          
          for(byte i = 0; i < comp.length; i++)

@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Slider
+ * Outlander - Multiplayer Space Game | ui_Slider
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017

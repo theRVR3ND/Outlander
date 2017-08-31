@@ -1,5 +1,5 @@
 /**
- * Kilo - 2D Java Multiplayer Engine | g_Server
+ * Outlander - Multiplayer Space Game | g_Server
  * W.T.Woodson H.S.
  * 2017
  *

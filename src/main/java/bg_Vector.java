@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | bg_Vector
+ * Outlander - Multiplayer Space Game | bg_Vector
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -12,17 +12,17 @@ public class bg_Vector{
    /**
     * Position in world plane.
     */
-   private short x, y;
+   private float x, y;
    
    /**
     * Rotation relative to world.
     */
-   private short rot;
+   private float rot;
    
    /**
     * Constructor.
     */
-   public bg_Vector(short x, short y, short rot){
+   public bg_Vector(float x, float y, float rot){
       this.x = x;
       this.y = y;
       this.rot = rot;
@@ -31,42 +31,54 @@ public class bg_Vector{
    /**
     * Get x-component of this.
     */
-   public short getX(){
+   public float getX(){
       return x;
    }
    
    /**
     * Get y-component of this.
     */
-   public short getY(){
+   public float getY(){
       return y;
    }
    
    /**
     * Get rotation component of this.
     */
-   public short getRot(){
+   public float getRot(){
       return rot;
    }
    
    /**
     * Set x-component of this.
     */
-   public void setX(short x){
+   public void setX(float x){
       this.x = x;
    }
    
    /**
     * Set y-component of this.
     */
-   public void setY(short y){
+   public void setY(float y){
       this.y = y;
    }
    
    /**
     * Set rotation component of this.
     */
-   public void setRot(short rot){
+   public void setRot(float rot){
       this.rot = rot;
+   }
+   
+   public void add(bg_Vector add){
+      x += add.getX();
+      y += add.getY();
+      rot += add.getRot();
+   }
+   
+   public void scale(float scale){
+      x *= scale;
+      y *= scale;
+      rot *= scale;
    }
 }

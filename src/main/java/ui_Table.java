@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Table
+ * Outlander - Multiplayer Space Game | ui_Table
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -218,12 +218,8 @@ public class ui_Table{
             String line = "";
             do{
                line += words[ind++] + " ";
-            }while(
-               ind < words.length &&
-               fontMetrics.stringWidth(line + words[ind]) < lineWidth
-            );
+            }while(ind < words.length && fontMetrics.stringWidth(line + words[ind]) <= lineWidth);
             this.contents.add(new String[] {line});
-            line = "";
          }
       }
    }

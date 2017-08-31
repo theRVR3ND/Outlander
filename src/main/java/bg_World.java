@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | bg_World
+ * Outlander - Multiplayer Space Game | bg_World
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -25,7 +25,7 @@ public abstract class bg_World implements bg_Constants{
    /**
     * Maximum update rate of world.
     */
-   private final byte THINK_RATE = 30;
+   private final byte THINK_RATE = 10;
    
    /**
     * Constructor.
@@ -51,21 +51,21 @@ public abstract class bg_World implements bg_Constants{
     */
    public void think(){
       //Time (in milliseconds) since last time think() was called
-      byte deltaTime = (byte)(System.currentTimeMillis() - lastThinkTime);
+      short deltaTime = (short)(System.currentTimeMillis() - lastThinkTime);
       
       //lastThinkTime now equals current time
       lastThinkTime += deltaTime;
       
-      //Limit rate of update
-      if(deltaTime < 1000.0 / THINK_RATE){
-         try{
-            Thread.sleep((byte)(1000.0 / THINK_RATE - deltaTime));
-         }catch(InterruptedException e){}
-      }
-      
       //Run think for all entities
       for(Short key : entities.keySet()){
          entities.get(key).think(deltaTime);
+      }
+      
+      //Limit rate of update
+      if(deltaTime < 1000.0 / THINK_RATE){
+         try{
+            Thread.sleep((short)(1000.0 / THINK_RATE - deltaTime));
+         }catch(InterruptedException e){}
       }
    }
    
@@ -118,15 +118,15 @@ public abstract class bg_World implements bg_Constants{
       for(Object o : data){
          byte[] temp = null;
          
-         //Convert short
-         if(o instanceof Short){
-            temp = shortToBytes((Short)o);
-         
-         //Convert byte
-         }else if(o instanceof Byte){
+         if(o instanceof Byte){
             temp = new byte[] {(Byte)(o)};
          
-         //Convert string
+         }else if(o instanceof Short){
+            temp = shortToBytes((Short)o);
+         
+         }else if(o instanceof Float){
+            temp = floatToBytes((Float)o);
+         
          }else if(o instanceof String){
             String s = (String)o;
             temp = new byte[MAX_PLAYER_NAME_LENGTH];
@@ -138,7 +138,6 @@ public abstract class bg_World implements bg_Constants{
             //Add length of string at front
             temp[0] = (byte)(stringBytes.length);
          
-         //Convert color
          }else if(o instanceof Color){
             Color c = (Color)o;
             temp = new byte[] {
@@ -188,6 +187,10 @@ public abstract class bg_World implements bg_Constants{
          }else if(t instanceof Short){
             ret.add(bytesToShort(data, i));
             i += 2;
+         
+         }else if(t instanceof Float){
+            ret.add(bytesToFloat(data, i));
+            i += 4;
          
          }else if(t instanceof String){
             //Get length of string (encoded in data)
@@ -310,14 +313,43 @@ public abstract class bg_World implements bg_Constants{
    }
    
    /**
+    * Convert float to byte array (4 bytes).
+    * 
+    * @param val              Float to convert.
+    */
+   public static byte[] floatToBytes(float val){
+      int bits = Float.floatToIntBits(val);
+      return new byte[] {
+         (byte)(bits >> 24),
+         (byte)(bits >> 16),
+         (byte)(bits >> 8),
+         (byte)(bits & 0xFFFFFFFF)
+      };
+   }
+   
+   /**
     * Convert byte array to short. Start using bytes at index start.
     * 
     * @param bytes            Byte array to convert from.
     * @param start            Index in bytes to convert from.
     */
    public static short bytesToShort(byte[] bytes, byte start){
-      return (short)(bytes[start] << 8 |
-                     bytes[start + 1] & 0xFF);
+      return (short)(bytes[start++] << 8 |
+                     bytes[start] & 0xFF);
       //                                ^ The Anti-Socrates
+   }
+   
+   /**
+    * Convert byte array to float. Start using bytes at index start.
+    * 
+    * @param bytes            Byte array to convert from.
+    * @param start            Index in bytes to convert from.
+    */
+   public static float bytesToFloat(byte[] bytes, byte start){
+      int bits = (int)(bytes[start++] << 24 |
+                       bytes[start++] << 16 |
+                       bytes[start++] << 8 |
+                       bytes[start] & 0xFFFFFFFF);
+      return Float.intBitsToFloat(bits);
    }
 }

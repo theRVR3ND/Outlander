@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | cg_Game
+ * Outlander - Multiplayer Space Game | cg_Game
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -86,7 +86,14 @@ public class cg_GamePanel extends cg_Panel implements MouseListener,
       
       //Action key, send to process
       if(chatMessage == null){
-         if(bindTable.containsKey((short)(e.getKeyCode()))){
+         //Escape to menu
+         if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
+            cg_Client.frame.setContentPane(ui_Menu.setup);
+            ui_Menu.setup.requestFocus();
+            cg_Client.frame.revalidate();
+         
+         //Action key
+         }else if(bindTable.containsKey((short)(e.getKeyCode()))){
             currActions.add(bindTable.get((short)(e.getKeyCode())));
          }
       }

@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | bg_Constants
+ * Outlander - Multiplayer Space Game | bg_Constants
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -23,13 +23,13 @@ public interface bg_Constants{
    /**
     * Standard format request from client for connection.
     */
-   public static final String REQUEST_MESSAGE = "KILO_REQUEST";
+   public static final String REQUEST_MESSAGE = "pLs_SeNpAi";
    
    /**
     * Maximum number of clients allowed in a server.
     * Limiting is needed to not crash or something.
     */
-   public static final byte MAX_PLAYERS = 24;
+   public static final byte MAX_PLAYERS = 12;
    
    /**
     * Stream tag. Identifies type of communication
@@ -38,7 +38,8 @@ public interface bg_Constants{
    public static final byte INITIALIZE = 0,
                                 ACTION = 1,
                                MESSAGE = 2,
-                                UPDATE = 3;
+                                UPDATE = 3,
+                                 CRAFT = 4;
    
    public static final byte MAX_PLAYER_NAME_LENGTH = 21;
    
@@ -50,16 +51,11 @@ public interface bg_Constants{
       First value must equal 0 and following
       values must increment up by one.
    */
-   public static final byte MOVE_UP = 0,
-                          MOVE_LEFT = 1,
-                          MOVE_DOWN = 2,
-                         MOVE_RIGHT = 3,
-                               JUMP = 4,
-                             CROUCH = 5,
-                               FIRE = 6,
-                             RELOAD = 7,
-                      SWITCH_WEAPON = 8,
-                               CHAT = 9;
+   public static final byte ROTATE_LEFT = 0,
+                           ROTATE_RIGHT = 1,
+                            THROTTLE_UP = 2,
+                          THROTTLE_DOWN = 3,
+                                   CHAT = 4;
    
    /**
     * Visible (to client) dimensions. Any entity within
@@ -71,5 +67,6 @@ public interface bg_Constants{
    /**
     * Entity type.
     */
-   public static final byte PLAYER = 0;
+   public static final byte PLAYER = 0,
+                            PLANET = 1;
 }

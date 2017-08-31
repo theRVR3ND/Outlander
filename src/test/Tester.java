@@ -16,11 +16,17 @@ public class Tester{
       //**********************************************************/
       
       //**********************************************************
-      for(short i = Short.MIN_VALUE; i <= Short.MAX_VALUE; i++){
-         byte[] bytes = shortToBytes(i);
-         final short con = bytesToShort(bytes, (byte)0);
-         if(con != i)
+      for(float i = Float.MIN_VALUE; i <= Float.MAX_VALUE; i++){
+         byte[] bytes = floatToBytes(i);
+         final float con = bytesToFloat(bytes, (byte)0);
+         //int bits = Float.floatToIntBits(i);
+         //   float crap = Float.intBitsToFloat(bits);
+            
+         if(con != i){
             System.out.println(i + " " + con);
+            //System.exit(0);
+            
+         }
          //else
             //System.out.println("Sky Jesus");
       }
@@ -51,5 +57,23 @@ public class Tester{
    public static short bytesToShort(byte[] bytes, byte start){
       return (short)(bytes[start] << 8 |
                      bytes[start + 1] & 0xFF);
+   }
+   
+   public static byte[] floatToBytes(float val){
+      int bits = Float.floatToIntBits(val);
+      return new byte[] {
+         (byte)((bits >> 24) & 0xFF),
+         (byte)((bits >> 16) & 0xFF),
+         (byte)((bits >> 8) & 0xFF),
+         (byte)(bits & 0xFF)
+      };
+   }
+   
+   public static float bytesToFloat(byte[] bytes, byte start){
+      int bits = (int)((int)(bytes[start++]) << 24 |
+                       (int)(bytes[start++]) << 16 |
+                       (int)(bytes[start++]) << 8 |
+                       (int)(bytes[start]) & 0xFF);
+      return Float.intBitsToFloat(bits);
    }
 }

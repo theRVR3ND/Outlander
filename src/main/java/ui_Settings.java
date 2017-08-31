@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Settings
+ * Outlander - Multiplayer Space Game | ui_Settings
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -66,13 +66,25 @@ public class ui_Settings extends ui_Menu{
       
       //Redirect to other menus
       if(buttons[0].isDown()){
-         cg_Client.frame.setContentPane(ui_Menu.setup);
-         //Write settings to file
-         String[] settings = new String[sliders.length];
-         for(byte i = 0; i < sliders.length; i++){
-            settings[i] = sliders[i].getValue() + "";
-         }
-         util_Utilities.writeToFile(settings, "menu/Settings.cfg");
+         /*
+         //Return to game
+         if(cg_Panel.isConnected()){
+            cg_Client.frame.setContentPane(cg_Panel.gamePanel);
+            cg_Panel.gamePanel.requestFocus();
+            cg_Client.frame.revalidate();
+         
+         //Return to main menu
+         }else{
+         */
+            cg_Client.frame.setContentPane(ui_Menu.setup);
+            
+            //Write settings to file
+            String[] settings = new String[sliders.length];
+            for(byte i = 0; i < sliders.length; i++){
+               settings[i] = sliders[i].getValue() + "";
+            }
+            util_Utilities.writeToFile(settings, "menu/Settings.cfg");
+         //}
       
       }else{
          return;

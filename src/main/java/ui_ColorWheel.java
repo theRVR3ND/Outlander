@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_ColorWheel
+ * Outlander - Multiplayer Space Game | ui_ColorWheel
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017

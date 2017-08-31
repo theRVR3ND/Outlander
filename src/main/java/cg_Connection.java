@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | cg_Connection
+ * Outlander - Multiplayer Space Game | cg_Connection
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017

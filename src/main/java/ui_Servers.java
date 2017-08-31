@@ -1,5 +1,5 @@
 /**
- * Kilo - Java Multiplayer Engine | ui_Servers
+ * Outlander - Multiplayer Space Game | ui_Servers
  * by Kelvin Peng
  * W.T.Woodson H.S.
  * 2017
@@ -151,7 +151,7 @@ public class ui_Servers extends ui_Menu implements MouseWheelListener, bg_Consta
    public static void joinServer(String IP){
       try{
          cg_Panel.connect(IP);
-         cg_GamePanel gamePanel = cg_Panel.gamePanel;
+         cg_EditorPanel gamePanel = cg_Panel.editorPanel;
          
          cg_Client.frame.setContentPane(gamePanel);
          
@@ -159,7 +159,9 @@ public class ui_Servers extends ui_Menu implements MouseWheelListener, bg_Consta
          cg_Client.frame.revalidate();
       
       //Could not connect
-      }catch(IOException e){}
+      }catch(IOException e){
+         System.out.println("More screwed than a soup sandwich.");
+      }
    }
    
    /**
